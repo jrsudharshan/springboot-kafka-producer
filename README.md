@@ -20,15 +20,14 @@ WebService<br />
 http://localhost:8080/kafka/publish<br /><br />
 
 message format: <br />
+<pre> 
 {<br />
-<pre>
    "name": "John",<br />
    "dob": "2010-01-01",<br />
    "email": "john@gmail.com",<br />
    "mobileNumber": "9122000987"<br />
-<pre>   
 }
-
+<pre> 
 
 
 
