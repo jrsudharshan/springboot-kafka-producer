@@ -1,23 +1,23 @@
 # springboot-kafka-producer
 
-- Start Zookeeper
-bin/zookeeper-server-start.sh config/zookeeper.properties
+- Start Zookeeper <br />
+bin/zookeeper-server-start.sh config/zookeeper.properties <br /><br />
 
-- Start Kafka Server
-bin/kafka-server-start.sh config/server.properties
+- Start Kafka Server <br />
+bin/kafka-server-start.sh config/server.properties <br /><br />
 
-- Create Kafka Topic
-bin/kafka-topics.sh --create --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --topic bday-notification-events
+- Create Kafka Topic <br />
+bin/kafka-topics.sh --create --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --topic bday-notification-events <br /><br />
 
-- Start consumer to consume messages
-bin/kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic Kafka_Example --from-beginning
+- Start consumer to consume messages<br />
+bin/kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic Kafka_Example --from-beginning<br /><br />
 
-topic-name: bday-notification-events
-partitions: 1
-replication-factor: 1 
+topic-name: bday-notification-events<br />
+partitions: 1<br />
+replication-factor: 1 <br />
 
-WebService
-http://localhost:8080/kafka/publish
+WebService<br />
+http://localhost:8080/kafka/publish<br />
 
 message format
 {
