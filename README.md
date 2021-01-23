@@ -28,8 +28,3 @@ message format: <br />
    "mobileNumber": "9122000987"<br />
 }
 <pre> 
-
-
-
-
-
