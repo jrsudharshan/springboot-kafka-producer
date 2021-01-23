@@ -19,12 +19,12 @@ replication-factor: 1 <br />
 WebService<br />
 http://localhost:8080/kafka/publish<br />
 
-message format
-{
-  "name": "John",
-  "dob": "2010-01-01",
-  "email": "john@gmail.com",
-  "mobileNumber": "9122000987"
+message format <br />
+{<br />
+  "name": "John",<br />
+  "dob": "2010-01-01",<br />
+  "email": "john@gmail.com",<br />
+  "mobileNumber": "9122000987"<br />
 }
 
 
