@@ -1,4 +1,4 @@
-# springboot-kafka-producer
+# Springboot-kafka-producer
 
 - Start Zookeeper <br />
 bin/zookeeper-server-start.sh config/zookeeper.properties <br /><br />
@@ -14,17 +14,19 @@ bin/kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic Kafka_Ex
 
 topic-name: bday-notification-events<br />
 partitions: 1<br />
-replication-factor: 1 <br />
+replication-factor: 1 <br /><br />
 
 WebService<br />
-http://localhost:8080/kafka/publish<br />
+http://localhost:8080/kafka/publish<br /><br />
 
-message format <br />
+message format: <br />
 {<br />
-  "name": "John",<br />
-  "dob": "2010-01-01",<br />
-  "email": "john@gmail.com",<br />
-  "mobileNumber": "9122000987"<br />
+<pre>
+   "name": "John",<br />
+   "dob": "2010-01-01",<br />
+   "email": "john@gmail.com",<br />
+   "mobileNumber": "9122000987"<br />
+<pre>   
 }
 
 
